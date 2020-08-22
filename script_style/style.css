@@ -1,0 +1,62 @@
+/*************************************/
+/* Pour toutes les pages : */
+/*************************************/
+
+a:link {
+    text-decoration: none;
+    color: #95a595;
+    font-weight: bold;
+}
+
+#leftheader {
+    float: left;
+}
+
+#rightheader {
+    float: right;
+    font-size: 14px;
+}
+
+#leftHeadPic {
+    width: 200px;
+    float: left;
+}
+
+#rightHeadPic {
+    width: 400px;
+    float: right;
+}
+
+#partner { font-size:16px; }
+
+code { 
+	color: crimson;
+  background-color: #f1f1f1;
+}
+/*************************************/
+/* Pour les modifications produits : */
+/*************************************/
+#add { text-align: center; }
+
+#ch { max-width: 200px; }
+
+i { font-size: 9px; }
+/*************************************/
+/*Pour les produits :*/
+/*************************************/
+#picprod {
+    text-align: center;
+    overflow: hidden;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.filterDiv {
+    display:none;
+}
+
+.show {
+    display: block;
+}

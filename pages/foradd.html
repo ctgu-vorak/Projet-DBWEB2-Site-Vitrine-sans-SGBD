@@ -1,0 +1,110 @@
+<div class='w3-justify w3-container'>
+    <form name="formprod" action='?page=modifproduits' method='post' enctype='multipart/form-data'>
+        <div id="erreur" class="w3-center w3-red w3-text-light-gray w3-container" style="display: none;"></div>
+        <table class='w3-table w3-center w3-justify'>
+            <tr class='w3-justify'>
+                <td class='w3-justify'>
+                    <h3><b>Formulaire</b></h3>
+                </td>
+                <td id='add'>
+                    <img src='pictures/forsite/plus.png' width='50'>
+                </td>
+            </tr>
+            <tr>
+                <td class='w3-justify' colspan=2>
+                    <b>
+                        Afin de p&eacute;r&eacute;niser notre site ainsi que dans un souci de fonctionnement permanent, <br>
+                        la Fondation nous autorise, au moment de la transaction sur le site marchand,
+                        de pr&eacute;lever une commission de 5%.<br><br>
+                    </b>
+                    Sachez que la cat&eacute;gorie de l'anomalie ne refl&egrave;te pas sa dangerosit&eacute;, mais sa capacit&eacute; &agrave; &ecirc;tre confin&eacute;e. <br>
+                    <strong><u>Exemple <i>(tout b&ecirc;te bien s&ucirc;r)</i> :</u></strong><br />
+                    Imaginez une baguette de pain tuant n'importe qui la touchant mais qui ne peut pas bouger.
+                    Elle est dangereuse car elle tue. <br />
+                    Cependant, pour la confiner, un simple coffre-fort dans un bureau suffit et le tour est r&eacute;gl&eacute;.
+                    Elle sera class&eacute;e comme <strong><code>S&ucirc;r</code></strong>.<br />
+                    En revanche, si elle fut anim&eacute;e, il aurait fallu  l'enfermer dans un coffre-fort blind&eacute;, dans une salle hermetique avec un vide int&eacute;gral.<br />
+                    L'anomalie aurait class&eacute;e comme <strong><code>Keter</code></strong> car la difficult&eacute; de confinement est bien plus s&eacute;v&egrave;re.
+                </td>
+            </tr>
+            <tr>
+                <td class='w3-justify' colspan=2>
+                    <label><b>Cat&eacute;gorie :</b></label><br />
+                    <input type='radio' name='categorie' value='Safe' /> Safe <br />
+                    <input type='radio' name='categorie' value='Euclide' /> Euclide <br />
+                    <input type='radio' name='categorie' value='Keter' /> Keter <br />
+                </td>
+            </tr>
+            <tr>
+                <td class='w3-justify' colspan=2>
+                    <label><b>Nom de l'anomalie :</b></label><br />
+                    <input name='anomalie' id="name_anomalie" type='text' placeholder='Nom' /><br />
+                </td>
+            </tr>
+            <tr>
+                <td class='w3-justify' colspan=2>
+                    <label><b>Prix (en &euro;) :</b></label><br />
+                    <input name='prix' id="prix" step="0.01" min="0" type='number' placeholder='Prix' /><br />
+                </td>
+            </tr>
+            <tr>
+                <td class='w3-justify' colspan=2>
+                    <b>Qui &ecirc;tes-vous ?</b><br />
+                    Entrez un pseudo : <i>Afin de garder l'anonymat vis-&agrave;-vis du site et de la fondation</i><br />
+                    <input name='pseudo' id="pseudo" type='text' maxlength='20' placeholder='Pseudo' /><br />
+                </td>
+            </tr>
+            <tr>
+                <td class='w3-justify'>
+                    <label><b>Choisissez l'image-annonce de votre anomalie :</b></label><br />
+                    Formats autoris&eacute;s : .png, .PNG, .jpg, .JPG, .jpeg, .JPEG, .gif, .GIF <br>
+                    Taille maximale : 8Mo <br>
+                </td>
+                <td class='w3-justify' rowspan=2>
+                    <img id='ch' />
+                </td>
+            </tr>
+            <tr>
+                <td class='w3-justify'>
+                    <input name='image' id="pic" type='file' accept='.png, .PNG, .jpg, .JPG, .jpeg, .JPEG, .gif, .GIF' onchange='preview_image(event)' />
+                </td>
+            </tr>
+            <tr>
+                <td class='w3-center' colspan=2>
+                    <input class='w3-button w3-round-small w3-black w3-hover-green' type='submit' value="Submission" />
+                    <input class='w3-button w3-round-small w3-black w3-hover-blue' type="reset" onclick="document.location.reload(false)" value="Reset" />
+                </td>
+            </tr>
+        </table><br>
+    </form>
+    <script type="text/javascript">
+        /* Affichage de l'image pour l'utilisateur */
+        function preview_image(event) {
+            var reader = new FileReader();  /* Nouveau fichier */
+            reader.onload = function () {   /* Execute l'&eacute;venement demand&eacute; */
+                var output = document.getElementById('ch'); /* Cherche l'&eacute;l&eacute;ment via l'id */
+                output.src = reader.result; /* ... */
+            }
+            reader.readAsDataURL(event.target.files[0]); /* Charge l'image afin d'en cr&eacute;er un aperçu */
+        }
+        /* V&eacute;rification Formulaire */
+        document.forms["formprod"].addEventListener("submit", function (e) { /* Lit le formulaire dans son ensemble */
+            var erreur;     /* D&eacute;finition de la variable d'erreur */
+            var inputs = this;  /* this repr&eacute;sente toutes les infos saisies sur ce formulaire pr&eacute;cisement */
+            for (var i = 0; i < inputs.length; i++) {   /* Boucle parcourant tous les inputs */
+                if (!inputs[i].value) {     /* Indication quand ne serait-ce qu'un seul seul non rempli */
+                    erreur = "Veuillez renseigner tous les champs.";    /* Stocke message d'erreur */
+                    break;  /* Stoppe le processus de v&eacute;rification */
+                }
+            }
+            if (erreur) {   /* Si le message d'erreur a une valeur */
+                e.preventDefault(); /* Annule la soumission du formulaire, ce qui signifie que l’action par d&eacute;faut qui appartient &agrave; l’&eacute;v&eacute;nement ne se produira pas */
+                var error = document.getElementById("erreur");  /* Definition variable annonce message erreur */
+                error.innerHTML = erreur;   /* Ecriture du message */
+                error.classList.add("w3-padding");  /* Rajout d'une marge interne */
+                error.style.display = "block";  /* Change l'affichage */
+                return false;
+            }
+        });
+    </script>
+</div>

@@ -1,0 +1,9 @@
+SCP-049|Euclide|3650000|Commandant O5-3|5ec01be452676.jpg
+SCP-055|Keter|9990000|Commandant O5-1|5ec01c094c382.png
+SCP-914|Safe|1475000|Commandant O5-7|5ec01c431e4d2.jpg
+SCP-030|Safe|1330000|Commandant O5-6|5ec01c8b0a674.jpg
+SCP-173|Euclide|3950000|Commandant O5-4|5ec01cffb8ec7.jpg
+SCP-682|Keter|6780500|Commandant O5-2|5ec01de40d872.jpg
+SCP-096|Euclide|3515000|Commandant O5-11|5ec01da9699f0.jpeg
+SCP-701|Euclide|2485000|Commandant O5-5|5ec01e4129876.jpg
+SCP-500|Safe|2365000|Commandant O5-12|5ec01e947b155.jpg
