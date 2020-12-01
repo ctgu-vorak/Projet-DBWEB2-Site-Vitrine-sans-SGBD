@@ -30,6 +30,7 @@
             <tr>
                 <td class='w3-justify' colspan=2>
                     <label><b>Cat&eacute;gorie :</b></label><br />
+                    <input type='radio' name='modifForm' value='false' style='display:none' />
                     <input type='radio' name='categorie' value='Safe' /> Safe <br />
                     <input type='radio' name='categorie' value='Euclide' /> Euclide <br />
                     <input type='radio' name='categorie' value='Keter' /> Keter <br />
@@ -85,7 +86,7 @@
                 var output = document.getElementById('ch'); /* Cherche l'&eacute;l&eacute;ment via l'id */
                 output.src = reader.result; /* ... */
             }
-            reader.readAsDataURL(event.target.files[0]); /* Charge l'image afin d'en cr&eacute;er un aperçu */
+            reader.readAsDataURL(event.target.files[0]); /* Charge l'image afin d'en cr&eacute;er un aperï¿½u */
         }
         /* V&eacute;rification Formulaire */
         document.forms["formprod"].addEventListener("submit", function (e) { /* Lit le formulaire dans son ensemble */
@@ -98,7 +99,7 @@
                 }
             }
             if (erreur) {   /* Si le message d'erreur a une valeur */
-                e.preventDefault(); /* Annule la soumission du formulaire, ce qui signifie que l’action par d&eacute;faut qui appartient &agrave; l’&eacute;v&eacute;nement ne se produira pas */
+                e.preventDefault(); /* Annule la soumission du formulaire, ce qui signifie que lï¿½action par d&eacute;faut qui appartient &agrave; lï¿½&eacute;v&eacute;nement ne se produira pas */
                 var error = document.getElementById("erreur");  /* Definition variable annonce message erreur */
                 error.innerHTML = erreur;   /* Ecriture du message */
                 error.classList.add("w3-padding");  /* Rajout d'une marge interne */
