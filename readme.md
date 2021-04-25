@@ -19,7 +19,7 @@ This project is the component of an examination carried out for the **DBWEB4 - D
 It is the result of a month of work done on Visual Studio Community 2019 between April and May 2020.
 
 ## Project Objective
-This project aims to create what looks like a small showcase site. *(Amazon Calm)*:smirk:  
+This project aims to create what looks like a small showcase site. *(Quit Amazon)*:smirk:  
 However, we do not have database modelling and **DBMS** (**D**ata**Base** **M**anagement **S**ystem). Therefore, to store the elements, we use a text file.
 
 ## What tools are used?
