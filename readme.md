@@ -1,27 +1,26 @@
-# Showcase without Database
-This project was a project at the end of the first French university year (L1 - Academic Year 2019/2020) whose objective was to create, for a seller, a showcase site on which he could present totally fanciful products.
+# Projet DBWEB2 - Site Vitrine sans SGBD- FR
 
-Skills acquired at the end of April 2019, date of filing and oral defense:
+## Préambule
+Ce projet est la composante d'un examen réalisé pour le module **DBWEB4 - Architecture Web Dynamique** de l'Université d'Avignon.  
+Il est le résultat d'un mois de travail réalisé sur Visual Studio Community 2019 entre Avril et Mai 2020.
 
-- HTML5/CSS
-- JavaScript
-- PHP
-- Use of forms
+## Objectif du projet
+Ce projet a pour but de créer à ce qui ressemble à un petit site vitrine. *(Du calme Amazon)* :smirk:  
+Cependant, nous ne disposons pas de modélisations de bases de données ni de **SGBD** (**S**ysteme de **G**estion de **B**ase de **D**onnées). De ce fait, pour stocker les éléments, nous utilisons un fichier texte.
 
+## Quels sont les outils utilisés ?
+Au vu de la simplicité du projet, un simple serveur Apache hébergé en local.
 
-Not surprisingly, we did not see database modelling or DBMS (DataBase Management Systems).
+----------------------------------------------------------------------
+# DBWEB2 project - Showcase site without DBMS- EN
 
-Thus, our "database" is fixed on a text file named 'base.txt'.
+## Preamble
+This project is the component of an examination carried out for the **DBWEB4 - Dynamic Web Architecture** module of the University of Avignon.  
+It is the result of a month of work done on Visual Studio Community 2019 between April and May 2020.
 
+## Project Objective
+This project aims to create what looks like a small showcase site. *(Amazon Calm)*:smirk:  
+However, we do not have database modelling and **DBMS** (**D**ata**Base** **M**anagement **S**ystem). Therefore, to store the elements, we use a text file.
 
-
-The defense and the project were a success with the following notes:
-
-- 20/20 for the requested Project code.
-- 20/20 for oral defence.
-
-
-
-Another project aims to improve this project by fixing the data of the 'base.txt' file on a DBMS of type MySQL.
-
-Link to this project: https://github.com/kaarov/showcase_mysql_db
+## What tools are used?
+Given the simplicity of the project, a simple Apache server hosted locally.
