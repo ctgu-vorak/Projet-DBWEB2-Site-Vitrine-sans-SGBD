@@ -1,7 +1,7 @@
 # Projet DBWEB2 - Site Vitrine sans SGBD- FR
 
 ## Préambule
-Ce projet est la composante d'un examen réalisé pour le module **DBWEB2 - Architecture Web Dynamique** de l'Université d'Avignon.  
+Ce projet est la composante d'un examen réalisé pour le module **DBWEB2 - Architecture Web Dynamique** de la Licence 1 en Informatique de l'Université d'Avignon.  
 Il est le résultat d'un mois de travail réalisé sur Visual Studio Community 2019 entre Avril et Mai 2020.
 
 ## Objectif du projet
@@ -15,7 +15,7 @@ Au vu de la simplicité du projet, un simple serveur Apache hébergé en local.
 # DBWEB2 project - Showcase site without DBMS- EN
 
 ## Preamble
-This project is the component of an examination carried out for the **DBWEB2 - Dynamic Web Architecture** module of the University of Avignon.  
+This project is the component of an examination carried out for the **DBWEB2 - Dynamic Web Architecture** of the Licence 1 in Computer Science of the University of Avignon.  
 It is the result of a month of work done on Visual Studio Community 2019 between April and May 2020.
 
 ## Project Objective
